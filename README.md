@@ -24,13 +24,17 @@
 
 ## 3. 基础使用
 
-| 命令       | 作用               | 说明                                                         |
-| ---------- | ------------------ | ------------------------------------------------------------ |
-| git add .  | 添加文件           |                                                              |
-| git commit | 提交               | 会弹出一个VIM 的窗口，输入 `i` 进入编辑模式， 写完后输入 `:wq` 退出编辑模式 |
-| git log    | 查看提交内容       |                                                              |
-| git statue | 查看工作区状态     |                                                              |
-| git push   | 推送分支           | 有一个 -u 参数                                               |
-| git –amend | 修改Commit message |                                                              |
+| 命令                                   | 作用                           | 说明                                                         |
+| -------------------------------------- | ------------------------------ | ------------------------------------------------------------ |
+| git add .                              | 添加文件                       |                                                              |
+| git commit                             | 提交                           | 会弹出一个VIM 的窗口，输入 `i` 进入编辑模式， 写完后输入 `:wq` 退出编辑模式 |
+| git log                                | 查看提交内容                   |                                                              |
+| git statue                             | 查看工作区状态                 |                                                              |
+| git push -u origin branch_name         | 推送分支                       | 有一个 -u 参数，全称是 –set-upstream 即在远端如果没有则自动创建一个同名分支 |
+| git –amend                             | 修改Commit message             |                                                              |
+| git branch                             | 查看分支                       | -r 参数查看远端分支                                          |
+| git branch –delete dev                 | 删除本地分支                   |                                                              |
+| git push origin –delete branch         | 删除远端分支                   |                                                              |
+| git checkout –track origin/branch_name | 本地创建一个远端同名分支并绑定 | git checkout -b new_branch_name branch_name 本地分支名和远端分支名不一样的时候 |
 
 > 早日脱离小乌龟 Tortoise.
